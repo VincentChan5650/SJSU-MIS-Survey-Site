@@ -84,10 +84,10 @@
 						</center>
 					</div>
 					<div>
-						<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" id="sf-form">
-						<input class='form-control' name="oid" type="hidden" value="00D61000000KK63">
-<!--						<input name="retURL" type="hidden" value="http://www.google.com">-->
-					<input name="retURL" type="hidden" value="http://www.sjsu.edu/isystems/thankyou/">  
+						<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+						<input type=hidden name="oid" value="00D61000000KK63">
+						<input type=hidden name="retURL" value="http://www.sjsu.edu/isystems/thankyou/">
 						<!-- ======================================================================  -->
 						 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
 						 <!--  these lines if you wish to test in debug mode.                          -->
@@ -95,7 +95,7 @@
 						 <!--  <input type="hidden" name="debugEmail" value="timothy.hill@sjsu.edu">   -->
 						 <!-- ======================================================================  -->
 						<div class="row">
-							<div id="input-fields" style="margin:10px 50px;">
+							<div id="input-fields">
 								<div class="form-control">
 									<span class="col-md-6 text-bold" style="padding:0;">
 										<label for="first_name">*First Name</label>
@@ -112,92 +112,27 @@
 									<label for="email" style="padding-left:0px;">*Email</label> <input id="email" maxlength="80" name="email" size="21" style="border-radius:4px; align:block; width:350px;" type="text">
 								</div>
 								<div class="form-control">
-									<strong>Currently, I’m: <select id="00N6100000HOzaY" name="00N6100000HOzaY" title="Currently, I’m">
-										<option value="">
-											--None--
-										</option>
-										<option value="attending De Anza College">
-											attending De Anza College
-										</option>
-										<option value="attending Foothill College">
-											attending Foothill College
-										</option>
-										<option value="attending Mission College">
-											attending Mission College
-										</option>
-										<option value="attending San Jose City College">
-											attending San Jose City College
-										</option>
-										<option value="attending West Valley College">
-											attending West Valley College
-										</option>
-										<option value="attending Evergreen Valley College">
-											attending Evergreen Valley College
-										</option>
-										<option value="attending Ohlone College">
-											attending Ohlone College
-										</option>
-										<option value="attending Las Positas College">
-											attending Las Positas College
-										</option>
-										<option value="attending High School in Bay Area">
-											attending High School in Bay Area
-										</option>
-										<option value="attending other 4-year university">
-											attending other 4-year university
-										</option>
-										<option value="not attending school">
-											not attending school
-										</option>
-										<option value="attending other">
-											attending other
-										</option>
+									<strong>Currently, I’m: <select  id="00N6100000HOzaY" name="00N6100000HOzaY" title="Currently, I’m"><option value="">--None--</option><option value="attending De Anza College">attending De Anza College</option>
+									<option value="attending Foothill College">attending Foothill College</option>
+									<option value="attending Mission College">attending Mission College</option>
+									<option value="attending San Jose City College">attending San Jose City College</option>
+									<option value="attending West Valley College">attending West Valley College</option>
+									<option value="attending Evergreen Valley College">attending Evergreen Valley College</option>
+									<option value="attending Ohlone College">attending Ohlone College</option>
+									<option value="attending Las Positas College">attending Las Positas College</option>
+									<option value="attending High School in Bay Area">attending High School in Bay Area</option>
+									<option value="attending other 4-year university">attending other 4-year university</option>
+									<option value="not attending school">not attending school</option>
+									<option value="attending other">attending other</option>
 									</select></strong>
 								</div>
 								<div class="form-control">
 									<label for="phone">My texting # is (if you want occasional texts)</label> <input id="phone" maxlength="40" name="phone" size="20" style="border-radius:4px" type="text">
 								</div>
 								<div class="form-control">
-<!--
-									<strong>If I wind up attending SJSU, I would probably start in: <select id="00N6100000HOzad" name="00N6100000HOzad" title="If I wind up attending SJSU, I would probably start in">
-										<option value="Fall 2017">
-											Fall 2017
-										</option>
-										<option value="Spring 2018">
-											Spring 2018
-										</option>
-										<option value="Fall 2018">
-											Fall 2018
-										</option>
-										<option value="Spring 2019">
-											Spring 2019
-										</option>
-										<option value="Fall 2019">
-											Fall 2019
-										</option>
-										<option value="Spring 2020">
-											Spring 2020
-										</option>
-										<option value="Fall 2020">
-											Fall 2020
-										</option>
-										<option value="Spring 2021">
-											Spring 2021
-										</option>
-										<option value="Fall 2021">
-											Fall 2021
-										</option>
-										<option value="Spring 2022">
-											Spring 2022
-										</option>
-										<option value="Fall 2022">
-											Fall 2022
-										</option>
-									</select></strong>
--->
-									<strong>If I wind up attending SJSU, I would pro:</strong>
-									<select>
-									<option value="None">--None--</option>
+
+									<strong>If I wind up attending SJSU, I would pro:<select  id="00N6100000HOzad" name="00N6100000HOzad" title="If I wind up attending SJSU, I would pro">
+									<option value="">--None--</option>
 									<option value="not sure">not sure</option>
 									<option value="Fall semester of this year">Fall semester of this year</option>
 									<option value="Spring semester of this year">Spring semester of this year</option>
@@ -205,6 +140,7 @@
 									<option value="Spring semester of next year">Spring semester of next year</option>
 									<option value="sometime further out">sometime further out</option>
 									</select>
+									</strong>
 								</div>
 							</div>
 						</div>
